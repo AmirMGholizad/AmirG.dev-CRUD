@@ -5,4 +5,4 @@ Template from:
 
 . https://github.com/Ade-mir/html-css-js-portfolio-tutorial-2
 
-Will modify backend with Python in future! 
+Will modify backend with Fastapi in future! 
