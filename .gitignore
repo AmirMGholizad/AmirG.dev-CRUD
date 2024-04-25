@@ -2,6 +2,4 @@ app/__pycache__
 __pycache__
 .env
 .apivenv/
-alembic/
-alembic.ini
 *.pem
