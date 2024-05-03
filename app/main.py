@@ -13,9 +13,9 @@ models.Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
 
-app.mount("/static", StaticFiles(directory="server_test/static"), name="static")
+app.mount("/static", StaticFiles(directory="app/static"), name="static")
 
-templates = Jinja2Templates(directory="server_test/templates")
+templates = Jinja2Templates(directory="app/templates")
 
 origins = ["*"]
 
