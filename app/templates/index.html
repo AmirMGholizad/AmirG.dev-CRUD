@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="{{ url_for('static', path='/css/style.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', path='/css/mediaqueries.css') }}">
+    <link rel="stylesheet" href="{{ request.url_for('static', path='/css/style.css') }}">
+    <link rel="stylesheet" href="{{ request.url_for('static', path='/css/mediaqueries.css') }}">
   </head>
   <body>
     <nav id="desktop-nav">
@@ -100,12 +100,17 @@
           </div>
           <div class="text-container">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-              reprehenderit et laborum, rem, dolore eum quod voluptate
-              exercitationem nobis, nihil esse debitis maxime facere minus sint
-              delectus velit in eos quo officiis explicabo deleniti dignissimos.
-              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
-              reiciendis ea magnam? Nulla, impedit fuga!
+              &#x2022; Data Scientist with 2+ years of experience in
+              developing ML and DL models, with proficiency in
+              TensorFlow, Scikit-learn, and PyTorch.
+              <br>
+              &#x2022; Junior Backend Developer specializing in AWS and
+              cloud-based solutions, with proficiency in FastAPI,
+              PostgreSQL, and Docker.
+              <br>
+              &#x2022; Experienced in preprocessing data for
+              machine learning models and deploying AI-based web apps and
+              databases to the cloud.
             </p>
           </div>
         </div>
@@ -119,7 +124,7 @@
     </section>
     <section id="experience">
       <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
+      <h1 class="title">Skills</h1>
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container">
@@ -236,7 +241,7 @@
                   class="icon"
                 />
                 <div>
-                  <h3>HTML</h3>
+                  <h3>Nginx</h3>
                   <p>Basic&emsp;&emsp;&emsp;</p>
                 </div>
               </article>
@@ -258,7 +263,7 @@
                   class="icon"
                 />
                 <div>
-                  <h3>Spark</h3>
+                  <h3>Docker</h3>
                   <p>Basic&emsp;&emsp;&emsp;</p>
                 </div>
               </article>
@@ -281,22 +286,22 @@
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="{{ url_for('static', path='/assets/project-1.png') }}"
+                src="{{ url_for('static', path='/assets/project-1.jpg') }}"
                 alt="Project 1"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
+            <h2 class="experience-sub-title project-title">CRUD WebApp</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/AmirMGholizad'"
+                onclick="location.href='https://github.com/AmirMGholizad/AmirG.dev-CRUD'"
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/AmirMGholizad'"
+                onclick="location.href='/docs'"
               >
                 Live Demo
               </button>
@@ -305,49 +310,49 @@
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="{{ url_for('static', path='/assets/project-2.png') }}"
+                src="{{ url_for('static', path='/assets/project-2.jpg') }}"
                 alt="Project 2"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <h2 class="experience-sub-title project-title">Sentiment Analysis</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/AmirMGholizad'"
+                onclick="location.href='https://github.com/AmirMGholizad/imdb_sentiment_analysis'"
               >
                 Github
               </button>
-              <button
+              <!-- <button
                 class="btn btn-color-2 project-btn"
                 onclick="location.href='https://github.com/AmirMGholizad'"
               >
                 Live Demo
-              </button>
+              </button> -->
             </div>
           </div>
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="{{ url_for('static', path='/assets/project-3.png') }}"
+                src="{{ url_for('static', path='/assets/project-3.jpg') }}"
                 alt="Project 3"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <h2 class="experience-sub-title project-title">Tails of Distributions</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/AmirMGholizad'"
+                onclick="location.href='https://github.com/AmirMGholizad/tails_of_distributions'"
               >
                 Github
               </button>
-              <button
+              <!-- <button
                 class="btn btn-color-2 project-btn"
                 onclick="location.href='https://github.com/AmirMGholizad'"
               >
                 Live Demo
-              </button>
+              </button> -->
             </div>
           </div>
         </div>
