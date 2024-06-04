@@ -4,3 +4,4 @@ __pycache__
 .apivenv/
 *.pem
 .DS_Store
+docker-compose-prod.yml
